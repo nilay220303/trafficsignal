@@ -3,6 +3,7 @@ import streamlit as st
 import cv2
 from PIL import Image
 import pickle
+import keras
 
 labels_dict = {
     0: '274. Speed limit (20km/h)',
@@ -53,7 +54,7 @@ labels_dict = {
 @st.cache
 def sign_predict(image):
 
-    model = pickle.load(open("traffic_signal_classifier.pkl"))
+    model = keras.models.load_model("traffic_sign_model.keras")
 
     image = np.array(image, dtype=np.float32)
     image = image/255
