@@ -53,7 +53,7 @@ labels_dict = {
 @st.cache
 def sign_predict(image):
 
-    model = pickle.load(open("/Users/nilaysaraf/traffic_signal_classifier.pkl"))
+    model = pickle.load(open("traffic_signal_classifier.pkl"))
 
     image = np.array(image, dtype=np.float32)
     image = image/255
