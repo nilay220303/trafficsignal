@@ -2,7 +2,7 @@ opencv-python==4.8.0.76
 Pillow==8.2.0
 numpy==1.24.0
 six==1.15.0
-typing-extensions==4.5.1
+typing-extensions==4.5.0
 urllib3==1.9.1
 Keras==2.13.1
 tensorflow==2.13.0
